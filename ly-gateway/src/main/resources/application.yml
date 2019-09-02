@@ -18,11 +18,11 @@ zuul:
 
 hystrix:
   command:
-     default:
-       exection:
-         isolation:
-           thread:
-             timeoutInMilliseconds: 5000 #熔断超时时长
+    default:
+      exection:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000 #熔断超时时长
 
 
 ribbon:
