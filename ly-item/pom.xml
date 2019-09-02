@@ -13,8 +13,11 @@
     <groupId>com.leyou.service</groupId>
     <artifactId>ly-item</artifactId>
     <packaging>pom</packaging>
+    <!--子工程-->
     <modules>
+        <!--实体子工程-->
         <module>ly-item-interface</module>
+        <!--服务接口工程-->
         <module>ly-item-service</module>
     </modules>
 
