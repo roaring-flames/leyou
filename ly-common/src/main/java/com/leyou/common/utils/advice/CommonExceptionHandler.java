@@ -16,11 +16,12 @@ public class CommonExceptionHandler {
 
     /**
      * 通用异常
+     *
      * @param e
      * @return
      */
     @ExceptionHandler(LyException.class)
-    public ResponseEntity<ExceptionResult> handleException(LyException e){
-        return  ResponseEntity.status(e.getExceptionEnums().getCode()).body(new ExceptionResult(e.getExceptionEnums()));
+    public ResponseEntity<ExceptionResult> handleException(LyException e) {
+        return ResponseEntity.status(e.getExceptionEnums().getCode()).body(new ExceptionResult(e.getExceptionEnums()));
     }
 }
