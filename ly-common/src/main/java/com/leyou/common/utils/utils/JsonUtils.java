@@ -1,4 +1,4 @@
-package com.leyou.common.utils;
+package com.leyou.common.utils.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -59,7 +59,7 @@ public class JsonUtils {
 
     public static <K, V> Map<K, V> toMap(String json, Class<K> kClass, Class<V> vClass) {
         try {
-            return mapper.readValue(json, mapper.getTypeFactory().constructMapType(Map.class,kClass, vClass));
+            return mapper.readValue(json, mapper.getTypeFactory().constructMapType(Map.class, kClass, vClass));
         } catch (IOException e) {
             logger.error("json解析出错" + json, e);
             return null;
@@ -122,4 +122,5 @@ public class JsonUtils {
             return null;
         }
     }
+
 }
